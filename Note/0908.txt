@@ -1,0 +1,11 @@
+argument 매개변수
+precedes 앞서다.
+
+스트레티지 패턴
+http://hyeonstorage.tistory.com/146
+http://sycho-lego.tistory.com/6
+
+어댑터 패턴
+
+UI FrameWork
+ adminlte

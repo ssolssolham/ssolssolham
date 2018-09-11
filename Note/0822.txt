@@ -1,0 +1,66 @@
+alt+shift+j : document
+alt + shift + r : 전체 바꾸기
+과제 낼 때 필수 ! Alt + shift + j 정렬도 필수 ! Ctrl + shift + f(format) 과제 내기전 확인
+
+Call by Value : return 2, return 3; 값이 전달됨
+Call by Reference : return array; 참조값을 전달됨 // 공유 개념.
+
+char[][] array;
+
+array = new char [2][3];
+
+1차원 배열 --> 1차원 배열이 참조하는 꼴로 만들어 진다.
+
+char 초기값 ? 0 
+
+int[][] array2 = new int[][] { {}, {}, {} }; // 시험 !
+int[][] array2 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } }; // 시험 !
+
+과제 : 데이터구조 스택,큐,트리,그래프
+	데이터구조 중 지역변수 할당영역인 스택을 만들어보자
+	class로 만들어야함(LIFO 구조)
+
+Setter,Getter,생성자,은닉화까지 완성
+필요에 의해 변수추가 가능
+Alt+shift+j로 설명 넣기
+정렬하기 ! 
+유효성 검사
+
+참조 데이터타입의 배열 : 처음값은 null로 설정되어 있다.
+
+Student[] students = new Student[]{new Student("kim","1",80),....};
+
+계좌 관리?
+
+강제로 예외 발생 --> new exception 
+변수를 하나 더 만들어서 0이면 throws exception
+
+객체의 별칭  : 클래스이름 + 해시코드 : 참조형 변수 출력시
+
+클래스 캡슐화 : 외부에 출력해주는 기능을 추가
+
+검색기능(계좌번호) : 과제
+Ctrl + Shift + O : import 단축키
+
+== : 기본타입을 비교하기 위한 연산자
+
+AccountManager
+Account[]
+open() 계좌 개설
+전체계좌 출력
+계좌조회 기능
+검색 기능(예금주 명으로 검색)
+삭제 기능
+
+//		String[][] array2 = new String[][] {{"a","b","c"},{"d","e","f"},{"g","h","i"}};
+		String[][] array2 = {{"a","b","c"},{"d","e","f"},{"g","h","i"}};
+		int[][] twoDim;
+		twoDim = new int[3][];
+		twoDim[0] = new int[2];
+		twoDim[1] = new int[4];
+		twoDim[2] = new int[1];
+		int twoDim[][] = {{1,2},{3,4,5,6},{7}};
+(시험!)
+
+java Exam 김기정 : command argument
+

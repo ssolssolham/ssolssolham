@@ -1,0 +1,17 @@
+if(i % 2 != 0){
+ continue;
+}
+if(i == 50){
+break;
+}
+
+      for(int i = 1; i <= 100; i++){
+          if( i % 2 != 0 ){
+              continue;
+          }
+          System.out.println(i);
+      }
+
+객체 지향 프로그래밍(OOP)
+
+다음주 월요일 테스트 평가 

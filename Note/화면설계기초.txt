@@ -1,0 +1,23 @@
+Label : 계좌종류, 계좌번호, 예금주명, 비밀번호, 대출금액, 입금금액, 계좌목록, (단위 : 원)
+ComboBox : 계좌종류(전체 : 입출금 계좌, 마이너스 계좌)
+TextField : 계좌번호, 예끔주명, 비밀번호, 대출금액(입출금 계좌시 잠금), 입금금액
+TextArea : 계좌목록
+Button : 조회, 삭제, 검색, 신규등록, 전체조회
+
+Frame 제목 : KOSTA AMS - 메인화면
+
+* finish(),list()
+
+	Label accountType,accountNum,accountOwner,accountPw,loanMoney,depositMoney,accountList,unitMoney;
+	Choice accountTypeC;
+	TextField accountNumTF,accountOwnerTF,accountPwTF,loanMoneyTF,depositMoneyTF;
+	TextArea accountListTA;
+	Button accountCheckB,accountDeleteB,accountSearchB,accountAddB,accountSearchAllB;
+	
+	GridBagLayout gridBagLayout;
+	GridBagConstraints gridBagConstraints;
+
+-Dfile.encoding=MS949
+
+1. 전체조회
+2. 

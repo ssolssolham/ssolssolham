@@ -1,0 +1,82 @@
+클래스(static) 변수 -- 전역변수(C에서 쓰는 말)
+
+한 클래스로부터 생성된 모든 객체들은 클래스 변수를 공유
+
+※ JVM 메모리 관리 모델
+   static(메소드) 영역, Stack(LIFO 구조),Heap
+
+하드디스크에서 클래스로더가 static 영역을 올린다. --> 인스턴스 할당되면 --> Heap(1020)에 올린다.
+
+ Account account;
+ account =  new Account();
+
+AccountExample.java:45: error: cannot assign a value to final variable bankName
+
+static 초기화 블록 : 클래스 로더가 클래스를 할당될 때 실행됨
+
+static{
+  ----
+  ----
+  ----
+}
+
+rt : runtime
+
+상수는 대문자로만 쓰는게 관례(코딩룰)
+
+Math.abs
+
+패키지는 도메인의 역순을 배열하여 소문자를 사용(ex : kr.co.some) , kr이 ROOT 패키지
+
+패키지 컴파일(시험!)
+javac -d 저장위치 소스파일명
+javac -d . 소스파일명 // 현재 위치에 패키지 구성
+javac -d . *.java 패키지에 존재하는 모든 클래스 컴파일
+
+kr.or.kosta.school.Student student; 인라인 임포트
+
+역컴파일러 : javap.exe 
+
+★
+Q. 환경변수 왜 선언?
+Q. 환경변수 하는법.
+Q. 컴파일 하는법
+Q. 컴파일 패키징
+기본기
+★
+
+역컴파일 : public class kr.or.kosta.Some --> C언어 네임스페이스
+
+C:\KOSTA187\workspace\OOP\kr\or\kosta>java Some
+오류: 기본 클래스 Some을(를) 찾거나 로드할 수 없습니다.
+--> 자바의 약간의 보안, 루트패키지 상위에서 실행
+
+패키징하면서 오류가 날 수 있는 부분?
+
+Editplus --> IDE
+Eclipse --> java로 만들어짐
+
+Eclipse에는 Perspective(개발 모드)라는 용어가 있다. 
+JAVA EE 모드가 기본 --> JAVA Perspective로 변경
+
+저장과 동시에 컴파일
+
+Copy Lines 
+라인 삭제 : Ctrl + d
+
+배열(Array)이란?
+
+자바는 배열을 하나의 클래스로 취급
+
+선언
+int[] p; 배열을 선언했다. // int[5] p; 에러발생(시험!)
+
+생성
+p = new int[5]; 배열 원소의 크기
+
+초기화
+p[0] = 5;
+...
+p[4] = 1;
+
+foreach
